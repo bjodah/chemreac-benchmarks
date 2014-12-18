@@ -1,0 +1,7 @@
+*~
+env/
+results/
+chemreac/
+benchmarks/*~
+html/
+*/__pycache__/
