@@ -3,5 +3,6 @@ env/
 results/
 chemreac/
 benchmarks/*~
+benchmarks/*.pyc
 html/
 */__pycache__/

@@ -29,13 +29,13 @@ def integrate_rd(t0=1e-7, tend=.1, doserate=15, N=1000, nt=512, nstencil=3,
 
     mu = 1.0  # linear attenuation
     rho = 1.0  # kg/dm3
-    rd = load(os.path.join(os.path.dirname(__file__), name+'aqueous_radiolysis.json'),
+    rd = load(os.path.join(os.path.dirname(__file__), 'aqueous_radiolysis.json'),
               ReactionDiffusion, N=N, logy=logy,
               logt=logt, bin_k_factor=[
                   [doserate*rho*exp(-mu*i/N)] for i in range(N)],
               nstencil=nstencil)
     y0_by_name = json.load(open(os.path.join(os.path.dirname(__file__),
-                                             name+'.y0.json'), 'rt'))
+                                             'aqueous_radiolysis.y0.json'), 'rt'))
 
     # y0 with a H2 gradient
     y0 = np.array([[y0_by_name.get(k, null_conc) if k != 'H2' else
