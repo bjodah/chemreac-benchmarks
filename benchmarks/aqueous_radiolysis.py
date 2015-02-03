@@ -51,7 +51,7 @@ class TimeAnalyticJacobian:
         integrate_rd(logy=False, logt=False)
 
     def time_log_transformed(self):
-        integrate_rd(logy=True, logt=True, 1e-13)
+        integrate_rd(logy=True, logt=True, t0=1e-13)
 
 class TimeNumericalJacobian:
 
