@@ -1,6 +1,10 @@
 chemreac benchmarks
 ===================
 
+.. image:: http://img.shields.io/badge/benchmarked%20by-asv-green.svg?style=flat
+   :target: http://hera.physchem.kth.se/~asv/chemreac-benchmarks
+   :alt: airspeedvelocity
+
 These benchmarks track the performance of various features in chemreac
 *over time*.
 
