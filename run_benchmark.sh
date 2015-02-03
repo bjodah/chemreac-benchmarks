@@ -7,4 +7,4 @@
 # Rename libm.so* in $CONDA_ROOT/pkgs/system-5.8-1/lib/
 
 CONDAROOT=$(conda info -s | grep sys.prefix | awk '{print $2}')
-PYTHONPATH=$CONDAROOT/lib/python3.4/site-packages:/home/asv/miniconda3/lib/python3.4/site-packages/Mako-1.0.0-py3.4.egg asv run $@
+PYTHONPATH=$CONDAROOT/lib/python3.4/site-packages:$CONDAROOT/lib/python3.4/site-packages/Mako-1.0.0-py3.4.egg asv run $@
